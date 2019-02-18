@@ -1,0 +1,366 @@
+:root {
+  --soft-blue: hsl(243, 86%, 85%);
+  --dark-blue: hsl(243, 58%, 33%);
+  --very-dark-blue: hsl(243, 87%, 12%);
+  --button-color: hsl(163, 95%, 43%);
+
+  --color-gray: hsl(0, 0%, 50%);
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.7;
+  font-size: 62.5%;
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+img {
+  max-width: 100%;
+}
+
+ul li {
+  list-style: none;
+}
+
+.heading-font {
+  font-family: "Raleway", sans-serif;
+}
+
+.header {
+  /* background-color: var(--dark-blue); */
+  background-image: linear-gradient(
+    to right bottom,
+    var(--dark-blue),
+    var(--soft-blue)
+  );
+  color: white;
+  padding: 2rem 1.5rem;
+  height: 95vh;
+
+  -webkit-clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 90%);
+  clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 90%);
+}
+
+.header .navigation {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navigation img {
+  width: 80px;
+}
+
+.navigation nav li {
+  display: inline-block;
+  margin-left: 15px;
+  font-size: 0.8rem;
+  font-weight: 300;
+  padding: 0 15px;
+  line-height: 2;
+}
+
+.btn {
+  background-color: var(--button-color);
+  border-radius: 3px;
+}
+
+.content .logo {
+  width: 200px;
+  margin: 0 auto;
+  padding: 100px 0 50px 0;
+}
+.heading-primary {
+  text-align: center;
+}
+
+.heading-primary h1 {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.heading-primary .btn {
+  color: white;
+  width: 220px;
+  padding: 15px 15px;
+  font-size: 1rem;
+  margin-top: 20px;
+}
+
+/* Features */
+
+.features {
+  padding: 6rem 2rem;
+}
+
+.features .heading {
+  font-size: 2rem;
+  font-weight: 900;
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+}
+
+.features .features-img {
+  width: 220px;
+  padding: 5rem 0;
+  margin: 0 auto;
+}
+
+.features h2 {
+  color: var(--very-dark-blue);
+  font-size: 1.2rem;
+  font-weight: 900;
+  padding: 10px 0;
+  font-family: "Raleway", sans-serif;
+}
+
+.features p {
+  color: var(--color-gray);
+  font-size: 1rem;
+}
+
+/* join */
+
+.join {
+  padding: 0rem 2rem 5rem;
+}
+
+.join h1 {
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: bolder;
+  font-family: "Raleway", sans-serif;
+  padding: 1rem 0;
+}
+
+.join p {
+  text-align: center;
+  color: var(--dark-blue);
+  font-size: 0.95rem;
+}
+
+.form {
+  padding-top: 20px;
+}
+
+.form input {
+  width: 100%;
+  height: 40px;
+  margin: 0.5rem 0;
+  padding-left: 20px;
+  font-size: 0.8rem;
+  color: var(--color-gray);
+}
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: var(--color-gray);
+  font-weight: 100;
+  opacity: 1; /* Firefox */
+}
+.form .btn {
+  color: white;
+  font-size: 1rem;
+  width: 100%;
+  height: 3rem;
+  margin-top: 1rem;
+}
+
+.footer {
+  background-color: var(--very-dark-blue);
+  color: white;
+  padding: 10rem 2rem 1rem;
+
+  -webkit-clip-path: polygon(0 0, 100% 5%, 100% 100%, 0% 100%);
+  clip-path: polygon(0 0, 100% 5%, 100% 100%, 0% 100%);
+}
+
+.footer > div {
+  margin-bottom: 6rem;
+}
+
+.footer .logo {
+  margin-bottom: 35px;
+}
+
+.footer .logo img {
+  width: 170px;
+}
+
+.footer span {
+  font-size: 1rem;
+  margin-left: 20px;
+  padding-bottom: 25px;
+  display: inline-block;
+}
+
+.footer .subscribe {
+  text-align: center;
+  font-size: 1.1rem;
+}
+
+.footer form {
+  margin: 2.5rem 0;
+}
+
+.footer input {
+  padding-left: 10px;
+  outline: none;
+  width: 100%;
+  height: 45px;
+  border-radius: 3px;
+}
+
+.footer .btn {
+  margin-top: 15px;
+  height: 40px;
+  width: 50%;
+  color: white;
+  font-size: 1rem;
+}
+
+.footer .button-right {
+  text-align: right;
+}
+
+.footer .sub-header {
+  font-size: 1.5rem;
+}
+
+.footer .footer-nav > * {
+  margin-bottom: 3rem;
+}
+
+.footer ul li {
+  margin: 15px auto;
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+@media screen and (min-width: 768px) {
+  .header {
+    padding: 2rem 3rem;
+    height: 80vh;
+  }
+  .content {
+    display: flex;
+  }
+  .content .logo {
+    flex: 1;
+  }
+
+  .content img {
+    width: 300px;
+  }
+
+  .heading-primary {
+    flex: 2;
+    order: -1;
+    align-self: center;
+    width: 400px;
+    text-align: left;
+  }
+
+  .heading-primary h1 {
+    width: 350px;
+  }
+
+  .featues-column {
+    padding: 3rem 0;
+    display: flex;
+  }
+
+  .featues-column > * {
+    width: 33.33%;
+  }
+
+  .features .content {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 2rem;
+  }
+
+  .join {
+    max-width: 630px;
+    margin: 0 auto;
+  }
+
+  .form .email-input {
+    width: 60%;
+  }
+
+  .form .btn {
+    width: 30%;
+    margin-left: 20px;
+  }
+
+  .footer {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .footer > * {
+    flex: 1;
+    padding: 0 25px;
+  }
+
+  .footer .col1 {
+    position: relative;
+  }
+
+  .footer .col1::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    z-index: 100;
+    top: 0;
+    width: 1px;
+    height: 200px;
+    background: white;
+  }
+
+  .footer .logo img {
+    width: 150px;
+  }
+
+  .footer .col1 span {
+    font-size: 0.7rem;
+  }
+
+  .footer .footer-sub {
+    order: 1;
+  }
+
+  .footer .subscribe {
+    font-size: 0.8rem;
+    text-align: left;
+  }
+
+  .footer .footer-nav {
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+  }
+
+  .footer .border-right {
+    position: relative;
+  }
+
+  .footer .border-right::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    z-index: 100;
+    top: 0;
+    width: 1px;
+    height: 200px;
+    background: white;
+  }
+}

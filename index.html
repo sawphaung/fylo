@@ -1,91 +1,185 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Fylo landing page with features grid section</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-  Sign In
-  Sign Up 
+    <title>
+      Fylo
+    </title>
 
-  All Your Files In One Secure Location, Accessible Anywhere.
-  Get Started
+    <link rel="stylesheet" href="style.css" />
 
-  Stay Productive, Wherever You Are
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,400|Raleway:700"
+      rel="stylesheet"
+    />
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  </head>
+  <body>
+    <header class="header">
+      <div class="navigation">
+        <div class="logo">
+          <img src="./images/logo.svg" alt="logo" />
+        </div>
 
-  All platforms, all devices, all your files
+        <nav>
+          <ul>
+            <li>
+              Sign In
+            </li>
 
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam 
-  egestas, elit sit amet fermentum viverra, ipsum dolor vehicula 
-  leo, ac accumsan magna tellus sed leo.
+            <li class="btn">
+              Sign Up
+            </li>
+          </ul>
+        </nav>
+      </div>
 
-  Real-time collaboration
+      <div class="content">
+        <div class="logo">
+          <img src="./images/illustration-hero.svg" alt="hero banner" />
+        </div>
+        <div class="heading-primary heading-font">
+          <div>
+            <h1>All your files in one secure location, accessible anywhere.</h1>
+            <button class="btn">Get Started</button>
+          </div>
+        </div>
+      </div>
+    </header>
 
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam 
-  egestas, elit sit amet fermentum viverra, ipsum dolor vehicula 
-  leo, ac accumsan magna tellus sed leo.
+    <section class="features">
+      <div class="heading">Stay Productive, Wherever You Are</div>
+      <div class="featues-column">
+        <div class="features-img">
+          <img src="./images/illustration-features.svg" alt="" class="logo" />
+        </div>
+        <div class="content">
+          <div>
+            <h2>All platforms, all devices, all your files</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+              egestas, elit sit amet fermentum viverra, ipsum dolor vehicula
+              leo, ac accumsan magna tellus sed leo.
+            </p>
+          </div>
 
-  Security you can trust
+          <div>
+            <h2>Security you can trust</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+              egestas, elit sit amet fermentum viverra, ipsum dolor vehicula
+              leo, ac accumsan magna tellus sed leo.
+            </p>
+          </div>
+        </div>
 
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam 
-  egestas, elit sit amet fermentum viverra, ipsum dolor vehicula 
-  leo, ac accumsan magna tellus sed leo.
+        <div class="content">
+          <div>
+            <h2>Real-time collaboration</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+              egestas, elit sit amet fermentum viverra, ipsum dolor vehicula
+              leo, ac accumsan magna tellus sed leo.
+            </p>
+          </div>
 
-  Automatic backups
+          <div>
+            <h2>Automatic backups</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+              egestas, elit sit amet fermentum viverra, ipsum dolor vehicula
+              leo, ac accumsan magna tellus sed leo.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam 
-  egestas, elit sit amet fermentum viverra, ipsum dolor vehicula leo, 
-  ac accumsan magna tellus sed leo.
+    <section class="join">
+      <h1 class="heading">Get Early Access Today</h1>
+      <p>
+        It only takes a minute to sign up and our free starter tier is extremely
+        generous. If you have any questions, our support team would be happy to
+        help you.
+      </p>
+      <form action="#" class="form">
+        <input
+          type="text"
+          placeholder="email@example.com"
+          class="email-input"
+        />
+        <button class="btn">Join</button>
+      </form>
+    </section>
 
-  Get Early Access Today
+    <footer class="footer">
+      <div class="col1">
+        <div class="logo">
+          <img src="./images/logo.svg" alt="" />
+        </div>
 
-  It only takes a minute to sign up and our free starter tier is extremely 
-  generous. If you have any questions, our support team would be happy to 
-  help you.
+        <div>
+          <img src="./images/icon-phone.svg" alt="" />
+          <span>Phone: +1-543-123-4567</span>
+        </div>
 
-  Join
+        <div>
+          <img src="./images/icon-email.svg" alt="" />
+          <span>example@fylo.com</span>
+        </div>
+      </div>
 
-  Phone: +1-543-123-4567
-  example@fylo.com
+      <div class="footer-sub">
+        <p class="subscribe">
+          Receive updates from us, including tips and tricks on how to improve
+          your workflow.
+        </p>
+        <form action="#">
+          <input type="text" />
+          <div class="button-right">
+            <button class="btn">Join</button>
+          </div>
+        </form>
+      </div>
 
-  Fylo
+      <div>
+        <p class="sub-header">Fylo</p>
+        <ul>
+          <li>Desktop App</li>
+          <li>Mobile App</li>
+          <li>Pricing</li>
+          <li>Feature</li>
+        </ul>
+      </div>
 
-  Desktop App
-  Mobile App
-  Pricing
-  Feature
+      <div>
+        <p class="sub-header">Company</p>
+        <ul>
+          <li>About Us</li>
+          <li>Jobs</li>
+          <li>Press</li>
+          <li>Blog</li>
+        </ul>
+      </div>
 
-  Company
-
-  About Us
-  Jobs
-  Press
-  Blog
-
-  Support
-
-  Contact Us
-  Terms
-  Privacy
-
-  Receive updates from us, including tips and tricks on how to improve your workflow.
-
-  Join
-
-  <footer>
-    <p class="attribution">
-      This page started life as a challenge on <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a> 🎉
-    </p>
-  </footer>
-</body>
+      <div class="border-right">
+        <p class="sub-header">Support</p>
+        <ul>
+          <li>Contact Us</li>
+          <li>Terms</li>
+          <li>Privacy</li>
+        </ul>
+      </div>
+    </footer>
+  </body>
 </html>
